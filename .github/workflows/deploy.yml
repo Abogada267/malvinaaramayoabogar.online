@@ -15,4 +15,4 @@ jobs:
 
     - name: Deploy to public_html
       run: |
-        cp -r  /public_html/abogar/
+       cp -r ./estudio/* /public_html/abogar/
