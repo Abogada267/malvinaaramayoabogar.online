@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página web del Estudio Jurídico Malvina Aramayo & Asociados">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; style-src 'self' 'nonce-abc123'; script-src 'self'; font-src 'self' data:;">
+  <title>Estudio Jurídico Malvina Aramayo & Asociados</title>
+  <script defer src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style nonce="abc123">
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .nav-menu a {
+      color: rgb(59, 13, 133);
+    }
+
+    .nav-menu {
+      display: none;
+    }
+
+    .nav-menu.active {
+      display: block;
+    }
+
+    .hero-image {
+      position: relative;
+      text-align: center;
+      color: white;
+      height: 100%;
+      background-image: url("../src/images/unestudiojuridico.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .services-menu {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .verde-agua {
+      color: #61dafb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="services-menu">
+    <button class="menu-toggle" aria-label="Menú de servicios">&#9776;</button>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Equipo</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-left">
+    Abogar Dra Malvina Aramayo
+  </div>
+
+  <div id="root">
+    <h1 class="verde-agua">Estudio Jurídico Malvina Aramayo & Asociados</h1>
+    <h2 class="verde-agua">Consúltanos</h2>
+    <p class="verde-agua">Haz clic y regístrate para conectarte con el mejor abogado online en tu zona en menos de 24
+      horas.</p>
+  </div>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-menu').classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
+
+
