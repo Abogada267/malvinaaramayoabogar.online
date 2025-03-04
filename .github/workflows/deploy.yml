@@ -15,4 +15,4 @@ jobs:
 
     - name: Deploy to public_html
       run: |
-        cp -r ./your_project_folder /public_html/abogar/
+        cp -r  /public_html/abogar/
